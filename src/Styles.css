@@ -1,0 +1,60 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-size: 3em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ffffff;
+}
+button:active{
+  transform: scale(0.95);
+  background-color: #1a1a1a;
+}
+
+.square {
+  border: 1px solid #404040;
+  float: left;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 34px;
+  margin-right: 4px;
+  margin-top: 4px;
+  padding: 0;
+  text-align: center;
+  height: 100px;
+  width:100px;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.Reset {
+  background-color: #1a1a1a;
+  height: 40px;
+  width: 70px;
+  border: 1px solid #404040;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 2px;
+  border-radius: 8px;
+}
