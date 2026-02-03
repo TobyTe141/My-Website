@@ -1,18 +1,19 @@
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 
-function HomePage() {
+function Login() {
   return (
     <div className="App">
       <Navbar />
-      <h1 className="header">Welcome To My Portfolio</h1>
+      <h1 className='header'>Login</h1>
     </div>
   );
 }
 
-export default function Home() {
+
+export default function LoginPage() {
   return (
-    <HomePage />
+    <Login />
   );
 }
 

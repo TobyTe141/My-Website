@@ -1,5 +1,8 @@
+import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 import './Styles.css'
 import { useState } from 'react';
+
 
 
 function Square({value, onSquareClick}) {
@@ -10,7 +13,8 @@ function Square({value, onSquareClick}) {
   );
 }
 
-export default function Board() {
+function Board() {
+
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
@@ -46,6 +50,7 @@ export default function Board() {
 
   return (
     <>
+    <div className="board">
       <div className="status">{status} <button id="Reset" className='Reset' onClick={handleReset} style={{display: showReset ? 'inline-block' : 'none'}}> Reset</button> </div> 
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -62,6 +67,7 @@ export default function Board() {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
+    </div>
     </>
   );
 }
@@ -84,4 +90,14 @@ function calculateWinner(squares) {
     }
   }
   return null;
+}
+
+export default function TicTacToe() {
+  return (
+    <div className="App">
+      <Navbar />
+      <h1 className='header'>Tic Tac Toe</h1>
+      <Board />
+    </div>
+  );
 }

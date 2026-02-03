@@ -13,6 +13,83 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-left .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+}
+
+.navbar-center .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navbar-right .Backend {
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-center .nav-links {
+    display: none;
+  }
+  .navbar-right {
+    display: flex;
+  }
+  .navbar-right .hamburger-menu {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 button {
   font-size: 3em;
   font-weight: 500;
@@ -43,6 +120,11 @@ button:active{
   width:100px;
 }
 
+.board{
+  margin: 20px auto;
+  width: 314px;
+}
+
 .board-row:after {
   clear: both;
   content: '';
@@ -57,4 +139,17 @@ button:active{
   margin-left: 10px;
   padding: 2px;
   border-radius: 8px;
+}
+.center-text {
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
