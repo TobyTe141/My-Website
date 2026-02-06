@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import './Styles.css'
 import { useState } from 'react';
-
+import {useRef, useEffect } from 'react';
 
 
 function Square({value, onSquareClick}) {
@@ -13,7 +13,14 @@ function Square({value, onSquareClick}) {
   );
 }
 
-function Board() {
+function Board({pageTitle}) {
+  const originalTitle = useRef(document.title).current;
+    useEffect(() => { 
+      document.title = pageTitle;
+      return () => {
+        document.title = originalTitle;
+      };
+    }, [pageTitle]);
 
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -36,7 +43,9 @@ function Board() {
   let status;
   if (winner) {
     status = 'Winner: ' + winner;
-  } else {
+  } else if (squares.every(Boolean)) {
+    status = 'It\'s a draw!';
+  }else {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
 
@@ -97,7 +106,7 @@ export default function TicTacToe() {
     <div className="App">
       <Navbar />
       <h1 className='header'>Tic Tac Toe</h1>
-      <Board />
+      <Board pageTitle={"Tic Tac Toe"} />
     </div>
   );
 }
