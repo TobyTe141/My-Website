@@ -13,10 +13,12 @@ function Error({pageTitle}) {
   }, [pageTitle]);
   
   return (
-    <div className="App">
+    <div>
+      <div className="App">
       <Navbar />
       <h1 className='header'>404 — Page not found</h1>
       <Link to="/" className="center-text">Go home</Link>
+      </div>
       <Footer />
     </div>
   );

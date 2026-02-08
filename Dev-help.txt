@@ -1,2 +1,2 @@
-html comments {/*comment here*/}
-Java script comments //comment here
+html comments: {/*comment here*/}
+Java script comments: //comment here

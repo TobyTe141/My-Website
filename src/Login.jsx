@@ -13,10 +13,15 @@ function Login({pageTitle}) {
   }, [pageTitle]);
 
   return (
-    <div className="App">
+    <div>
+      <div className="App">
       <Navbar />
-      <h1 className='header'>Login</h1>
-      <p className="center-text">This page is under construction.</p>
+        <h1 className='header'>Login</h1>
+        <p className="center-text">This page was meant for a backend connected login system but due to security conserns, cost and the work required it has currently been scrapped I might come back to this later but for now its not worth it</p>
+        <div className="center-items">
+        <Link to="/"><button className='button'>Return Home Page</button></Link>
+        </div>
+      </div>
       <Footer />
     </div>
   );

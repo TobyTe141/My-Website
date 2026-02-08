@@ -8,6 +8,7 @@ import ErrorPage from './Error.jsx';
 import Projects from './Projects.jsx';
 import Login from './Login.jsx';
 import News from './News.jsx';
+import Socials from './Socials.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/login" element={<Login />} />
         <Route path='/news' element={<News />}/>
+        <Route path="/socials" element={<Socials />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
