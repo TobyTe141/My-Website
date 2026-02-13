@@ -350,3 +350,112 @@ button:active {
     font-size: 1.4em;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
+
+.link {
+  color: #66c2ff;
+  text-decoration: none;
+}
+.link:visited {
+  color: #66c2ff;
+  text-decoration: none;
+}
+.link:hover {
+  color: #66c2ff; 
+  text-decoration: underline;
+}
+.link:active {
+  color: #66c2ff; 
+  text-decoration: none;
+}
+
+/*Style Page Section*/
+
+.instagram-logo {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  margin-top: 30px;
+}
+.Socials-logos{
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  margin-top: 20px;
+}
+.socials-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 20px;
+
+}
+
+.socials-card {
+  background-color: #2e2d2d;
+  border-radius: 8px;
+  padding: 20px;
+  width: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.socials-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+.socials-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.socials-link:hover {
+  color: #ffffff; 
+  text-decoration: underline;
+}
+.socials-link:active {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.Email-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-bottom: 0.1em;
+}
+.Email-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.Email-link:hover {
+  color: #ffffff; 
+  text-decoration: underline;
+}
+.Email-link:active {
+  color: #ffffff; 
+  text-decoration: none;
+}
+.socials-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.socials-header {
+  text-align: left;
+  margin-left: 0.8em;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
