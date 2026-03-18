@@ -20,7 +20,7 @@ body {
 }
 
 .App {
-  margin-left: 80px;
+  margin-left: 90px;
   transition: margin-left 0.3s ease;
   min-height: 100vh;
   padding: 0;
@@ -159,7 +159,7 @@ body {
   margin-bottom: 2rem;
 }
 
-button {
+.button {
   font-size: 3em;
   font-weight: 500;
   font-family: inherit;
@@ -214,21 +214,6 @@ button:active {
   border-radius: 8px;
 }
 
-/* Projects Styles */
-.project-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.center-text {
-  text-align: center;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
 /* News Styles */
 .News-Title {
   font-size: 1.5rem;
@@ -251,8 +236,6 @@ button:active {
 }
 
 
-
-
 /*Footer section*/
 
 .Footer {
@@ -264,4 +247,215 @@ button:active {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+
+/*The Projects Section*/
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 20px;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 1.4em;
+  margin-left: 50%;
+  ;
+}
+
+.projects-container {
+  align-items: left;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.project-card {
+  background-color: #2e2d2d;
+  border-radius: 8px;
+  padding: 20px;
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.project-image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 2px;
+}
+.play-button {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: inherit;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.play-button:hover {
+  border-color: #ffffff;
+}
+
+.play-button:active {
+  transform: scale(0.95);
+  background-color: #1a1a1a;
+}
+
+/*The Login Section*/
+.center-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*Home Page Section*/
+.home-header-1 {
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+  .home-header-2 {
+    font-size: 2.4em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+  }
+  .home-text{
+    margin-left: 60px;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+.link {
+  color: #66c2ff;
+  text-decoration: none;
+}
+.link:visited {
+  color: #66c2ff;
+  text-decoration: none;
+}
+.link:hover {
+  color: #66c2ff; 
+  text-decoration: underline;
+}
+.link:active {
+  color: #66c2ff; 
+  text-decoration: none;
+}
+
+/*Style Page Section*/
+
+.instagram-logo {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  margin-top: 30px;
+}
+.Socials-logos{
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  margin-top: 20px;
+}
+.socials-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 20px;
+
+}
+
+.socials-card {
+  background-color: #2e2d2d;
+  border-radius: 8px;
+  padding: 20px;
+  width: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.socials-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+.socials-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.socials-link:hover {
+  color: #ffffff; 
+  text-decoration: underline;
+}
+.socials-link:active {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.Email-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-bottom: 0.1em;
+}
+.Email-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.Email-link:hover {
+  color: #ffffff; 
+  text-decoration: underline;
+}
+.Email-link:active {
+  color: #ffffff; 
+  text-decoration: none;
+}
+.socials-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.socials-header {
+  text-align: left;
+  margin-left: 0.8em;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }

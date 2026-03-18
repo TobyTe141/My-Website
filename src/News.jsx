@@ -12,13 +12,15 @@ function News({pageTitle}) {
     };
     }, [pageTitle]);
   return (
-    <div className="App">
+    <div>
+      <div className="App">
       <Navbar />
       <h1 className='header'>The News</h1>
         <div className="News-Box">
           <h1 className='News-Title'>Latest Updates</h1>
           <p className="News-text">This Page and Website are still under construction but will hope to be fully functional and ready for pentesting and launch soon</p>
         </div>
+      </div>
       <Footer />
     </div>
   );

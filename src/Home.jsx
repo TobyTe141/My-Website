@@ -13,9 +13,15 @@ function HomePage({pageTitle}) {
   }, [pageTitle]);
 
   return (
-    <div className="App">
+    <div>
+      <div className="App">
       <Navbar />
-      <h1 className="header">Welcome To My Portfolio</h1>
+      {/*Why Are you looking in here?*/}
+      <h1 className="home-header-1" >Hello, I am Toby Painter</h1>
+      <p className="home-text">Welcome to my portfolio website, I created this website <br/> to showcase my projects and to show off my web development <br/>skills
+        Please explore the <Link className='link' to="/projects">projects page</Link>, and feel free to reach out <br/> through the <Link className='link' to="/contact">contact page</Link> if you have any questions.
+      </p>
+      </div>
       <Footer />
     </div>
   );

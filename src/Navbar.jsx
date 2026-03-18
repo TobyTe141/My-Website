@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Styles.css'; // Use global Styles.css
 import Newslogo from './assests/Icons/NavBar-Icons/Dark-mode-news.webp'
 import Loginlogo from './assests/Icons/NavBar-Icons/Dark-mode-login.webp'
+import HomeLogo from './assests/Icons/NavBar-Icons/Dark-mode-Home.webp'
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
     { path: '/Projects', icon: '📁', label: 'Projects' },
     { path: '/About', icon: 'ℹ️', label: 'About Me' },
     { path: '/Contact', icon: '✉️', label: 'Contact' },
-    {path: '/Scocials', icon: '🔗', label: 'Socials'},
+    {path: '/Socials', icon: '🔗', label: 'Socials'},
   ];
 
   return (
@@ -23,7 +24,7 @@ const Navbar = () => {
       >
         <div className="sidebar-header">
           <Link to="/" className="logo">
-            p
+            <img src={HomeLogo} alt="Home Icon" />
           </Link>
         </div>
 
@@ -48,9 +49,10 @@ const Navbar = () => {
         <Link to="/News" className="top-nav-item news-item" title="News">
           <img src={Newslogo} alt="News Icon" className="top-nav-icon" />
         </Link>
-        <Link to="/Login" className="top-nav-item login-item" title="Login">
-          <img src={Loginlogo} alt="Login Icon" className="top-nav-icon" />
-        </Link>
+        {/*This might becom more viable later so revisit it later down the line*/}
+        {/*<Link to="/Login" className="Login" aria-label="Login">
+          <img className='navbar-icons' src={Loginlogo} alt="Login Icon"/>
+        </Link>*/}
       </div>
     </>
   );

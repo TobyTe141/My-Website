@@ -12,10 +12,13 @@ function Contact({pageTitle}) {
     };
   }, [pageTitle]);
   return (
-    <div className="App">
-      <Navbar />
-      <h1>Contact</h1>
-      <p>Reach out at <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <div >
+      <div className="App">
+        <Navbar />
+        <h1>Contact</h1>
+        <p>Reach out at <a href="mailto:Toby.Painter@proton.me">Toby.Painter@proton.me</a></p>
+        <Footer />
+      </div>
       <Footer />
     </div>
   );

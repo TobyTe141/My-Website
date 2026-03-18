@@ -12,11 +12,13 @@ function About({pageTitle}) {
     };
   }, [pageTitle]);
 return (
-    <div className="App">
+    <div>
+      <div className="App">
       <Navbar />
       <h1>About Tic Tac Toe</h1>
       <p>This is a simple Tic Tac Toe game built with React.</p>
       <Link to="/tictactoe">Play Game</Link>
+      </div>
       <Footer />
     </div>
   );
