@@ -1,3 +1,3 @@
-# Toby Painter's Portfolio Website
+# Toby's Portfolio Website
 This is my portfolio websites code 
 it's made using react 
